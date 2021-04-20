@@ -1,0 +1,180 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    background-color: whitesmoke;
+}
+
+.main .first {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main .first .socials {
+    padding-left: 25%;
+}
+
+.main .first .socials .icon {
+    padding-top: 30px;
+    width: 30px;
+    border-right: 1px solid orange;
+}
+
+.main .second {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main .second .info .hey {
+    color: orange;
+    font-size: 25px;
+}
+
+.main .second .info .name {
+    margin-top: -10px;
+    font-size: 50px;
+}
+
+.main .second .job {
+    margin-top: -30px;
+}
+
+.main .second .job .title {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.main .second .job .description {
+    margin-top: -15px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.main .second .actions {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    
+}
+
+.main .second .actions .cv {
+    padding-right: 20px;
+}
+
+.main .second .actions .cv button {
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: orange;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.main .second .actions .cv button:hover {
+    background-color: white;
+    color: orange;
+    border: 1px solid orange;
+    box-shadow: rgb(179, 119, 8);
+    transition: .5s;
+    transition-timing-function: ease-out;
+}
+
+.main .second .actions .contact {
+    padding-left: 20px;
+}
+
+
+.main .second .actions .contact button {
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid orange;
+    color: orange;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.main .second .actions .contact button:hover {
+    background-color: orange;
+    color: white;
+    box-shadow: rgb(179, 119, 8);
+    transition: .5s;
+    transition-timing-function: ease-out;
+}
+
+.main .third {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+
+.main .third img {
+    height: 100%;
+    width: 75%;
+}
+
+.stats .skills {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    height: 15vh;
+    border-radius: 100px;
+    margin-top: -7vh;
+    -webkit-box-shadow: 1px 1px 18px 3px rgba(0,0,0,0.28); 
+    box-shadow: 1px 1px 18px 3px rgba(0,0,0,0.28);
+    background-color: white;
+    position: absolute;
+    left: 15%;
+}
+
+.stats .skills:last-child {
+    padding-right: 20px;
+}
+
+.stats .skills .skill {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 40px;
+}
+.stats .skills .skill .description {
+    padding-left: 50px;
+}
+
+.stats .skills .skill .description .title {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.stats .skills .skill .description .desc {
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: -15px;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+}
+.about .about-us {
+    display: flex;
+    margin-top: 15vh;
+    border: 1px solid red;
+}
+
+.about .about-us img {
+    height: 200px;
+    width: 100px;
+}
