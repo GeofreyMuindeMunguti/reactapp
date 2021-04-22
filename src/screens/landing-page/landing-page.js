@@ -16,7 +16,7 @@ import lean from "../../res/images/lean.png"
 
 import { faBookMedical, faCamera, 
     faCoffee, faGamepad, faHouseUser, 
-    faMailBulk, faMusic, faPersonBooth, 
+    faMailBulk, faMusic, 
     faPhone, faUser } 
 from '@fortawesome/free-solid-svg-icons';
 
