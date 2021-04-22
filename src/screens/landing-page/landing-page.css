@@ -139,7 +139,11 @@
 }
 
 .stats .skills:last-child {
-    padding-right: 20px;
+    padding-right: 40px;
+}
+
+.stats .skills:middle-child {
+    border-left: 1px solid grey;
 }
 
 .stats .skills .skill {
@@ -155,7 +159,7 @@
 
 .stats .skills .skill .description .title {
     font-size: 25px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .stats .skills .skill .description .desc {
@@ -167,14 +171,233 @@
 .about {
     display: flex;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    margin-top: 20vh;
+    height: 60vh;
 }
-.about .about-us {
+.about .about-me {
     display: flex;
-    margin-top: 15vh;
-    border: 1px solid red;
+    border-style: solid;
+    width: 30%;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    border: none;
+    background-image: linear-gradient(to right top, #d4eef4, #e1f1fa, #eef5fd, #f8fafe, #ffffff);
 }
 
-.about .about-us img {
-    height: 200px;
-    width: 100px;
+.about .about-me img {
+    height: 480px;
+    width: 500px;
+    padding-bottom: 20px;
+}
+
+.about .description {
+    width: 40%;
+    margin-left: 100px;
+}
+
+.about .description .title {
+    color: orange;
+    font-weight: 400;
+}
+
+.about .description .text .heading {
+    font-weight: 600;
+    font-size: 40px;
+    margin-top: -20px;
+}
+ 
+.about .description .text .desc {
+    font-weight: 300;
+    font-size: 17px;
+    margin-top: -20px;
+}
+
+.about .description .bio {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.about .description .bio .name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.about .description .bio .name .icon {
+    display: flex;
+    justify-content: space-evenly;
+    width: 25%;
+}
+
+
+.about .description .interests {
+    margin-top: 20px;
+}
+
+.about .description .interests .heading {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.about .description .interests .list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 300;
+}
+
+.about .description .interests .list .icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .description .interests .list .icon .text {
+    padding-top: 0px;
+    padding-left: 10px;
+}
+
+
+.skillset {
+    min-height: 70vh;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skillset .why-me {
+    color: orange;
+    font-size: 17px;
+}
+.skillset .my-skills {
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: -20px;
+    margin-left: auto;
+    margin-right: auto;
+    /* border-bottom: 3px solid orange; */
+    padding-bottom: 10px;
+}
+
+.skillset .visualization {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.skillset .visualization .right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.skillset .visualization .middle {
+    width: 200px;
+    
+}
+
+.skillset .visualization .right .language {
+    width: 50%;
+}
+
+.skillset .visualization .right .language .text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 18px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    font-weight:500;
+}
+
+
+.previous-works {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.previous-works .previously {
+    color: orange;
+    font-size: 17px;
+}
+.previous-works .title {
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: -20px;
+    margin-left: auto;
+    margin-right: auto;
+    /* border-bottom: 3px solid orange; */
+    padding-bottom: 10px;
+}
+
+
+.previous-works .grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 70px;
+}
+
+.previous-works .grid .item {
+    width: 650px;
+    -webkit-box-shadow: 1px 1px 11px 2px rgba(0,0,0,0.27); 
+    box-shadow: 1px 1px 11px 2px rgba(0,0,0,0.27);
+}
+
+.previous-works .grid .item:hover {
+    padding-top: -10px;
+    -webkit-box-shadow: 1px -4px 12px 6px rgba(0,0,0,0.27); 
+    box-shadow: 1px -4px 12px 6px rgba(0,0,0,0.27);
+}
+
+.previous-works .grid .item .thumbnail {
+    height: 300px;
+    width: 100%;
+}
+
+.previous-works .grid .item .text {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.previous-works .grid .item .timeframe {
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.previous-works .grid .item .description {
+    font-size: 20px;
+    font-weight: 350;
+}
+
+.contact-me {
+    padding-top: 10vh;
+}
+
+.footer {
+    height: 20vh;
+    background-color: rgb(9, 9, 100);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p {
+    margin-top: -5px;
+    color: white;
 }
