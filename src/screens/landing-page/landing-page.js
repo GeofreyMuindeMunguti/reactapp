@@ -190,7 +190,7 @@ class LandingPage extends React.Component {
 
             <div className="about">
                 <div className="about-me">
-                     <img src={pp_image}></img>
+                     <img src={pp_image} alt="Muinde Geofrey"></img>
                 </div>
                 <div className="description">
                     <h4 className="title">My Intro</h4>
@@ -327,7 +327,7 @@ class LandingPage extends React.Component {
                         return (
                             
                             <div className="item">
-                                <img className="thumbnail" src={work.image}/>
+                                <img className="thumbnail" src={work.image} alt={work.name}/>
                                 <div className="text">
                                     <p className="timeframe">{work.timeframe}</p>
                                     <p className="description">{work.desc}</p>
