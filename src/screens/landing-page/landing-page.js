@@ -305,7 +305,7 @@ class LandingPage extends React.Component {
                                     {skill.rate}%
                                 </div>
                             </div>
-                            <ProgressBar fillColor="orange" borderColor="orange" width="300%" height="10px" radius="0px" percent={skill.rate} />
+                            <ProgressBar fillColor="orange" borderColor="orange" width="250%" height="10px" radius="0px" percent={skill.rate} />
                         </div>
                     )})}
                     </div>
@@ -326,7 +326,7 @@ class LandingPage extends React.Component {
                                     {skill.rate}%
                                 </div>
                             </div>
-                            <ProgressBar fillColor="orange" borderColor="orange" width="300%" height="10px" radius="0px" percent={skill.rate} className="progress-bar"/>
+                            <ProgressBar fillColor="orange" borderColor="orange" width="250%" height="10px" radius="0px" percent={skill.rate} className="progress-bar"/>
                         </div>
                     )})}
                     </div>
