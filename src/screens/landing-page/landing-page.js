@@ -3,8 +3,10 @@ import './landing-page.css';
 
 import colors from "../../res/colors";
 
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
+
 
 
 import profile_image from '../../res/images/profile.png';
@@ -99,22 +101,35 @@ const previous_works = [
     }
 ]
 
+
+function contact(){
+    console.log("Contact");
+    window.location.href = 'tel:+254711421684'; 
+}
+
+function linkedinCv(){
+    console.log("donwload CV")
+    window.open('https://www.linkedin.com/in/geofrey-munguti-068235117/', "_blank"); 
+}
+
 class LandingPage extends React.Component {
+    
 
     render () {
         return (
             <div>
             <div className="main">
+            
                 <div className="first">
                     <div className="socials">
                         <div className="icon">
-                            {facebook_icon}
+                            <a href="https://www.facebook.com/geoffrey.munguti.14/">{facebook_icon}</a>
                         </div>
                         <div className="icon">
-                           {linkedin_icon}
+                        <a href="https://www.linkedin.com/in/geofrey-munguti-068235117/">{linkedin_icon}</a>
                         </div>
                         <div className="icon">
-                            {github_icon}
+                        <a href="https://github.com/GeofreyMuindeMunguti">{github_icon}</a>
                         </div>
                         <div className="icon">
                         
@@ -141,12 +156,12 @@ class LandingPage extends React.Component {
 
                     <div className="actions">
                         <div className="cv">
-                            <button>
-                                Download CV
+                            <button onClick={linkedinCv}>
+                                Linkedin CV
                             </button>
                         </div>
                         <div className="contact">
-                            <button>
+                            <button onClick={contact}>
                                 Contact Me  
                             </button>
                         </div>
@@ -215,16 +230,16 @@ class LandingPage extends React.Component {
                     <div className="bio">
                         <div className="name">
                             <div className="icon">
-                                <div>{person_icon}</div> 
-                                <div>Name :</div>
+                                <div className="icon">{person_icon}</div> 
+                                <div className="name">Name :</div>
                             </div>
                             <div>Muinde Geofrey</div>
                         </div>
 
                         <div className="name">
                             <div className="icon">
-                                <div>{phone_icon}</div> 
-                                <div>Phone :</div>
+                                <div className="icon">{phone_icon}</div> 
+                                <div className="name">Phone :</div>
                             </div>
                             <div>(+254) 711 421 684</div>
                         </div>
@@ -232,8 +247,8 @@ class LandingPage extends React.Component {
 
                         <div className="name">
                             <div className="icon">
-                                <div>{email_icon}</div> 
-                                <div>Email :</div>
+                                <div className="icon">{email_icon}</div> 
+                                <div className="name">Email :</div>
                             </div>
                             <div>muindegeofrey@gmail.com</div>
                         </div>
@@ -290,7 +305,7 @@ class LandingPage extends React.Component {
                                     {skill.rate}%
                                 </div>
                             </div>
-                            <ProgressBar fillColor="orange" borderColor="orange" width="400px" height="10px" radius="0px" percent={skill.rate} />
+                            <ProgressBar fillColor="orange" borderColor="orange" width="300%" height="10px" radius="0px" percent={skill.rate} />
                         </div>
                     )})}
                     </div>
@@ -311,7 +326,7 @@ class LandingPage extends React.Component {
                                     {skill.rate}%
                                 </div>
                             </div>
-                            <ProgressBar fillColor="orange" borderColor="orange" width="400px" height="10px" radius="0px" percent={skill.rate} />
+                            <ProgressBar fillColor="orange" borderColor="orange" width="300%" height="10px" radius="0px" percent={skill.rate} className="progress-bar"/>
                         </div>
                     )})}
                     </div>
