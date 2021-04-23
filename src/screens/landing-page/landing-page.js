@@ -114,6 +114,9 @@ function linkedinCv(){
 
 class LandingPage extends React.Component {
     
+    componentDidMount(){
+        document.title = "Muinde Geofrey Munguti";
+    }
 
     render () {
         return (
