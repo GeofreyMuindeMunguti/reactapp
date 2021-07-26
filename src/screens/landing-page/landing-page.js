@@ -40,33 +40,20 @@ const photo_icon = <FontAwesomeIcon icon={faCamera} color={colors.primaryColor} 
 
 
 const skills = [{
-    name: "python",
+    name: "Python",
     rate: 90,
 },{
-    name:"java",
+    name:"Java",
     rate: 85,
 },{
-    name: "javascript",
+    name: "Javascript",
     rate: 90,
-},{
-    name: "html",
-    rate: 95,
-},{
-    name: "css",
-    rate: 80,
-},{
-    name:"Go",
-    rate: 70
 }]
 
 const extra_skills = [
-    {name:"CI/CD", rate: 90},
-    {name: "Automation Testing" , rate: 70},
+    {name: "Automation Testing" , rate: 90},
     {name: "System Design", rate: 80},
-    {name: "Microservice Architecture", rate: 85},
     {name: "Server management" , rate: 70},
-    {name: "Product development Management" ,rate: 70},
-
 ]
 
 const previous_works = [

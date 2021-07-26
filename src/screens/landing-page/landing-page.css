@@ -441,7 +441,7 @@
 
 
 .skillset {
-    min-height: 70vh;
+    min-height: 50vh;
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
